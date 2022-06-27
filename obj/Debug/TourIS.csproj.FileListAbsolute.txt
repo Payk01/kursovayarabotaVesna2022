@@ -1,0 +1,88 @@
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.csproj.AssemblyReference.cache
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.csproj.SuggestedBindingRedirects.cache
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\ClientsPage.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\loginPage.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\MainWindow.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\MainWindow2.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\OrdersPage.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\App.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS_MarkupCompile.cache
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS_MarkupCompile.lref
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\TourIS.exe.config
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\TourIS.exe
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\TourIS.pdb
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\EntityFramework.dll
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\MaterialDesignColors.dll
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\EntityFramework.xml
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Maksofer\Desktop\TourIS\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\App.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\ClientsPage.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\loginPage.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\MainWindow.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\MainWindow2.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\OrdersPage.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.g.resources
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.Properties.Resources.resources
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.csproj.GenerateResource.cache
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.csproj.CoreCompileInputs.cache
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.csproj.CopyComplete
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.exe
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS.pdb
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\ToursPage.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\TourIS_Content.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\ToursPage.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\AddClientInfo.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\AddClientInfo.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\AddTourWindow.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\AddTourWindow.baml
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\AddOrderInfo.g.cs
+C:\Users\Maksofer\Desktop\TourIS\obj\Debug\AddOrderInfo.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\TourIS.exe.config
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\TourIS.exe
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\TourIS.pdb
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\EntityFramework.dll
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\MaterialDesignColors.dll
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\EntityFramework.xml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\MaterialDesignColors.pdb
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.csproj.AssemblyReference.cache
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.csproj.SuggestedBindingRedirects.cache
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\AddClientInfo.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\AddOrderInfo.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\AddTourWindow.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\ClientsPage.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\loginPage.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\MainWindow.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\MainWindow2.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\OrdersPage.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\ToursPage.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\App.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS_Content.g.cs
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS_MarkupCompile.cache
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS_MarkupCompile.lref
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\App.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\AddClientInfo.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\AddOrderInfo.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\AddTourWindow.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\ClientsPage.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\loginPage.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\MainWindow.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\MainWindow2.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\OrdersPage.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\ToursPage.baml
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.g.resources
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.Properties.Resources.resources
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.csproj.GenerateResource.cache
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.csproj.CoreCompileInputs.cache
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.csproj.CopyComplete
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.exe
+C:\Users\volod\OneDrive\Desktop\Курс прога\TourIS\obj\Debug\TourIS.pdb

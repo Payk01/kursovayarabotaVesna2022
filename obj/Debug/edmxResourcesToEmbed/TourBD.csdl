@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TourAgentBDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Active">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Tours" Relationship="Self.FK_Tours_Active" FromRole="Active" ToRole="Tours" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clientImage" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telephone" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Order_Clients" FromRole="Clients" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Tours" Relationship="Self.FK_Tours_Country" FromRole="Country" ToRole="Tours" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="clientID" Type="Int32" Nullable="false" />
+    <Property Name="kolvo" Type="Int32" />
+    <Property Name="tourID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Order_Clients" FromRole="Order" ToRole="Clients" />
+    <NavigationProperty Name="Tour" Relationship="Self.FK_Order_Tours" FromRole="Order" ToRole="Tours" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tour">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tourPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="countryID" Type="Int32" Nullable="false" />
+    <Property Name="Hotel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="departureDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="activeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Active" Relationship="Self.FK_Tours_Active" FromRole="Tours" ToRole="Active" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_Tours_Country" FromRole="Tours" ToRole="Country" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Order_Tours" FromRole="Tours" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Tours_Active">
+    <End Role="Active" Type="Self.Active" Multiplicity="1" />
+    <End Role="Tours" Type="Self.Tour" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Active">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tours">
+        <PropertyRef Name="activeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Clients">
+    <End Role="Clients" Type="Self.Client" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="clientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tours_Country">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="Tours" Type="Self.Tour" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tours">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Tours">
+    <End Role="Tours" Type="Self.Tour" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tours">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="tourID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TourAgentBDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Actives" EntityType="Self.Active" />
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Tours" EntityType="Self.Tour" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <AssociationSet Name="FK_Tours_Active" Association="Self.FK_Tours_Active">
+      <End Role="Active" EntitySet="Actives" />
+      <End Role="Tours" EntitySet="Tours" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Clients" Association="Self.FK_Order_Clients">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tours_Country" Association="Self.FK_Tours_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Tours" EntitySet="Tours" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Tours" Association="Self.FK_Order_Tours">
+      <End Role="Tours" EntitySet="Tours" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,86 @@
+﻿<Page x:Class="TourIS.ToursPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TourIS"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="820"
+      Title="ToursPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Button x:Name="addBN" Height="50" Width="150" Content="Добавить" Background="#FFE6E6E6" HorizontalAlignment="Center" Margin="0" Click="addBN_Click" VerticalAlignment="Center" Grid.Column="1"/>
+
+        <DataGrid  Visibility="Visible" x:Name="toursGrid" AutoGenerateColumns="False" FontSize="14" FontFamily="/ИС Спортивного комплекса;component/Fonts/#Gilroy Bold" Background="Black" Margin="0" Grid.Row="1" Grid.ColumnSpan="3" Foreground="#DD000000">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Фото" Width="200">
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Width="Auto" Source="{Binding tourPhoto}" Stretch="Fill" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Name}"  ElementStyle="{StaticResource RightAligned}" Header="Название" Width="130" Foreground="White">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Country.Name}" ElementStyle="{StaticResource RightAligned}" Header="Страна" Width="80" Foreground="White">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Hotel}" ElementStyle="{StaticResource RightAligned}" Header="Отель" Width="124" Foreground="White" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding departureDate, StringFormat=dd-MM-yyyy}" ElementStyle="{StaticResource RightAligned}" Header="Дата вылета" Width="110" Foreground="White" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Cost}" ElementStyle="{StaticResource RightAligned}" Header="Стоимость" Width="110" Foreground="White" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Active.Name}" ElementStyle="{StaticResource RightAligned}" Header="Активен?" Width="124" Foreground="White" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
